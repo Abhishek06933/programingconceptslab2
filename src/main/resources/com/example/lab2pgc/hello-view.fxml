@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="566.0" prefWidth="400.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.lab2pgc.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <TextField promptText="id" fx:id="Aid" text="id" />
+    <TextField promptText="guestname" fx:id="Aguestname" text="guestname" />
+    <TextField promptText="room" fx:id="Aroom" text="room" />
+    <TextField promptText="payment" fx:id="Apayment" text="payment" />
+
+    <Label fx:id="User__Name" />
+    <Button fx:id="Load" onAction="#onHelloButtonClick" text="Load" />
+    <Button mnemonicParsing="false"  onAction="#InsertData" text="Insert" />
+    <Button mnemonicParsing="false"  onAction="#UpdateData" text="Update" />
+    <Button mnemonicParsing="false"  onAction="#DeleteData" text="Delete" />
+    <TableView fx:id="tableView" prefWidth="200.0">
+        <columns>
+            <TableColumn prefWidth="75.0" fx:id="id" text="id" />
+            <TableColumn prefWidth="75.0" fx:id="guestname" text="guestname" />
+            <TableColumn prefWidth="75.0" fx:id="room" text="room" />
+            <TableColumn prefWidth="75.0" fx:id="payment" text="payment" />
+        </columns>
+    </TableView>
+</VBox>
